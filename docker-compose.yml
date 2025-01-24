@@ -1,4 +1,3 @@
-version: '3'
 name: monitoring-as-code
 services:
   grafana:
