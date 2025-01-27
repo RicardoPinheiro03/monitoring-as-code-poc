@@ -1,4 +1,5 @@
 name: monitoring-as-code
+
 services:
   grafana:
     image: grafana/grafana-oss
@@ -27,5 +28,3 @@ volumes:
 networks:
   monitoring:
     external: true
-  
-
