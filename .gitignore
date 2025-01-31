@@ -1,2 +1,4 @@
 */metricsgen
 grafonnet-lib/
+vendor/
+*/dashboards/

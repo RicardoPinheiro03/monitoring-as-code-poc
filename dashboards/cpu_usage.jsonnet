@@ -4,10 +4,12 @@ local graph = grafana.graphPanel;
 local prometheus = grafana.prometheus;
 
 dashboard.new(
-    'Services Resources Usage',
+    title = 'Services Resources Usage',
     timezone = 'utc',
-    schemaVersion = 14,
-    time_from = 'now-1h'
+    schemaVersion = 16,
+    time_from = 'now-1h',
+    tags = [ 'cpu', 'compute' ],
+    uid = 'services-cpu-usage'
 )
 .addPanel(
     graph.new(
